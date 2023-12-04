@@ -1,0 +1,5 @@
+# Project exclude paths
+/.gradle/
+/Aquarium/task/build/
+/Aquarium/task/build/intermediates/javac/debug/classes/
+/Aquarium/task/build/intermediates/javac/debugUnitTest/classes/

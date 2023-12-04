@@ -1,0 +1,1562 @@
+type: edu
+files:
+  - name: src/main/java/org/hyperskill/aquarium/MainActivity.kt
+    visible: true
+    text: |
+      package org.hyperskill.aquarium
+      
+      import androidx.appcompat.app.AppCompatActivity
+      import android.os.Bundle
+      
+      class MainActivity : AppCompatActivity() {
+          override fun onCreate(savedInstanceState: Bundle?) {
+              super.onCreate(savedInstanceState)
+              setContentView(R.layout.activity_main)
+          }
+      }
+    learner_created: false
+  - name: src/main/res/drawable/error.xml
+    visible: true
+    text: |
+      <vector xmlns:android="http://schemas.android.com/apk/res/android"
+          android:width="100dp"
+          android:height="100dp"
+          android:viewportWidth="1000"
+          android:viewportHeight="1000">
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M10,534.5c0,-23 0,-46 0,-69c1,-4.3 2.6,-8.5 3,-12.8C35.2,242.9 179.9,75.4 383.7,24.8c27,-6.7 54.8,-10.3 82.3,-15.3c23,0 46,0 69,0c6.2,1.2 12.3,2.8 18.5,3.5c66.7,7.4 130,26.3 187.8,60.4c184.1,108.3 276,295.6 241.7,506.5c-29.4,181 -134.5,306.6 -303.8,375.5c-44.2,18 -93.4,23.7 -140.3,35c-25.5,0 -51.1,0 -76.6,0c-18.8,-3 -38,-4.9 -56.5,-9.3C209,935 81.4,815.4 26.1,620.7C18.1,592.7 15.2,563.2 10,534.5zM806.9,681.3c-61.3,-61 -122.6,-121.9 -187.2,-186.2c60.8,-60.6 121.9,-121.6 181.5,-181c-38.3,-38.2 -77,-76.9 -117.3,-117.1c-60,60 -121.2,121.3 -183.2,183.4c-61.9,-62.1 -123,-123.5 -183.3,-184c-40.5,41 -79.4,80.2 -120.1,121.4c59.9,59.8 121.2,121 183.6,183.2c-61.8,61.7 -123,122.9 -183,182.8c40.5,40 79.8,78.8 121.8,120.3c59.4,-59.9 120.3,-121.3 183.5,-185c61.6,61.8 122.6,123.1 182.7,183.3C725.1,763.2 763.7,724.5 806.9,681.3z"/>
+      </vector>
+    learner_created: false
+  - name: src/main/res/drawable/ic_launcher_background.xml
+    visible: true
+    text: |
+      <?xml version="1.0" encoding="utf-8"?>
+      <vector xmlns:android="http://schemas.android.com/apk/res/android"
+          android:width="108dp"
+          android:height="108dp"
+          android:viewportWidth="108"
+          android:viewportHeight="108">
+          <path
+              android:fillColor="#008577"
+              android:pathData="M0,0h108v108h-108z" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M9,0L9,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,0L19,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M29,0L29,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M39,0L39,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M49,0L49,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M59,0L59,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M69,0L69,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M79,0L79,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M89,0L89,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M99,0L99,108"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,9L108,9"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,19L108,19"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,29L108,29"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,39L108,39"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,49L108,49"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,59L108,59"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,69L108,69"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,79L108,79"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,89L108,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M0,99L108,99"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,29L89,29"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,39L89,39"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,49L89,49"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,59L89,59"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,69L89,69"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M19,79L89,79"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M29,19L29,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M39,19L39,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M49,19L49,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M59,19L59,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M69,19L69,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+          <path
+              android:fillColor="#00000000"
+              android:pathData="M79,19L79,89"
+              android:strokeWidth="0.8"
+              android:strokeColor="#33FFFFFF" />
+      </vector>
+    learner_created: false
+  - name: src/main/res/drawable/image1.png
+    visible: true
+    learner_created: false
+  - name: src/main/res/drawable/placeholder.xml
+    visible: true
+    text: |
+      <vector android:height="100dp" android:viewportHeight="1000"
+          android:viewportWidth="1000" android:width="100dp" xmlns:android="http://schemas.android.com/apk/res/android">
+          <path android:fillColor="#FF000000" android:pathData="M881.1,132.5H118.9C59,132.5 10,181.5 10,241.4v517.3c0,59.9 49,108.9 108.9,108.9h762.2c59.9,0 108.9,-49 108.9,-108.9V241.4C990,181.5 941,132.5 881.1,132.5zM949.2,747.3c0,54.9 -24.5,79.4 -79.4,79.4H130.3c-54.9,0 -79.4,-24.5 -79.4,-79.4V252.7c0,-54.9 24.5,-79.4 79.4,-79.4h739.5c54.9,0 79.4,24.5 79.4,79.4V747.3zM316.3,418.3L418.3,500l265.4,-224.6l204.2,183.8v306.3H112.1V581.7L316.3,418.3zM193.8,234.6c-45.1,0 -81.7,36.6 -81.7,81.7s36.6,81.7 81.7,81.7s81.7,-36.6 81.7,-81.7S238.9,234.6 193.8,234.6z"/>
+      </vector>
+    learner_created: false
+  - name: src/main/res/drawable-v24/ic_launcher_foreground.xml
+    visible: true
+    text: |
+      <vector xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:aapt="http://schemas.android.com/aapt"
+          android:width="108dp"
+          android:height="108dp"
+          android:viewportWidth="108"
+          android:viewportHeight="108">
+          <path
+              android:fillType="evenOdd"
+              android:pathData="M32,64C32,64 38.39,52.99 44.13,50.95C51.37,48.37 70.14,49.57 70.14,49.57L108.26,87.69L108,109.01L75.97,107.97L32,64Z"
+              android:strokeWidth="1"
+              android:strokeColor="#00000000">
+              <aapt:attr name="android:fillColor">
+                  <gradient
+                      android:endX="78.5885"
+                      android:endY="90.9159"
+                      android:startX="48.7653"
+                      android:startY="61.0927"
+                      android:type="linear">
+                      <item
+                          android:color="#44000000"
+                          android:offset="0.0" />
+                      <item
+                          android:color="#00000000"
+                          android:offset="1.0" />
+                  </gradient>
+              </aapt:attr>
+          </path>
+          <path
+              android:fillColor="#FFFFFF"
+              android:fillType="nonZero"
+              android:pathData="M66.94,46.02L66.94,46.02C72.44,50.07 76,56.61 76,64L32,64C32,56.61 35.56,50.11 40.98,46.06L36.18,41.19C35.45,40.45 35.45,39.3 36.18,38.56C36.91,37.81 38.05,37.81 38.78,38.56L44.25,44.05C47.18,42.57 50.48,41.71 54,41.71C57.48,41.71 60.78,42.57 63.68,44.05L69.11,38.56C69.84,37.81 70.98,37.81 71.71,38.56C72.44,39.3 72.44,40.45 71.71,41.19L66.94,46.02ZM62.94,56.92C64.08,56.92 65,56.01 65,54.88C65,53.76 64.08,52.85 62.94,52.85C61.8,52.85 60.88,53.76 60.88,54.88C60.88,56.01 61.8,56.92 62.94,56.92ZM45.06,56.92C46.2,56.92 47.13,56.01 47.13,54.88C47.13,53.76 46.2,52.85 45.06,52.85C43.92,52.85 43,53.76 43,54.88C43,56.01 43.92,56.92 45.06,56.92Z"
+              android:strokeWidth="1"
+              android:strokeColor="#00000000" />
+      </vector>
+    learner_created: false
+  - name: src/main/res/layout/activity_main.xml
+    visible: true
+    text: |
+      <?xml version="1.0" encoding="utf-8"?>
+      <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+      
+          <TextView
+              android:id="@+id/tv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Hello HyperSkill!"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+      
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    learner_created: false
+  - name: src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+    visible: true
+    text: |-
+      <?xml version="1.0" encoding="utf-8"?>
+      <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+          <background android:drawable="@drawable/ic_launcher_background" />
+          <foreground android:drawable="@drawable/ic_launcher_foreground" />
+      </adaptive-icon>
+    learner_created: false
+  - name: src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+    visible: true
+    text: |-
+      <?xml version="1.0" encoding="utf-8"?>
+      <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+          <background android:drawable="@drawable/ic_launcher_background" />
+          <foreground android:drawable="@drawable/ic_launcher_foreground" />
+      </adaptive-icon>
+    learner_created: false
+  - name: src/main/res/values/colors.xml
+    visible: true
+    text: |
+      <?xml version="1.0" encoding="utf-8"?>
+      <resources>
+          <color name="colorPrimary">#008577</color>
+          <color name="colorPrimaryDark">#00574B</color>
+          <color name="colorAccent">#D81B60</color>
+      </resources>
+    learner_created: false
+  - name: src/main/res/values/strings.xml
+    visible: true
+    text: |
+      <resources>
+          <string name="app_name">Aquarium</string>
+      </resources>
+    learner_created: false
+  - name: src/main/res/values/styles.xml
+    visible: true
+    text: |
+      <resources>
+      
+          <!-- Base application theme. -->
+          <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+              <!-- Customize your theme here. -->
+              <item name="colorPrimary">@color/colorPrimary</item>
+              <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+              <item name="colorAccent">@color/colorAccent</item>
+          </style>
+      
+      </resources>
+    learner_created: false
+  - name: src/main/AndroidManifest.xml
+    visible: true
+    text: |-
+      <?xml version="1.0" encoding="utf-8"?>
+      <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="org.hyperskill.aquarium">
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+          <activity android:name="org.hyperskill.aquarium.MainActivity"
+              android:exported="true">
+            <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+      
+              <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+          </activity>
+        </application>
+      
+      </manifest>
+    learner_created: false
+  - name: build.gradle
+    visible: true
+    text: |-
+      apply plugin: 'com.android.application'
+      apply plugin: 'kotlin-android'
+      
+      android {
+          compileSdkVersion hs.android.compileSdkVersion
+      
+          defaultConfig {
+      
+              applicationId "org.hyperskill.aquarium"
+              minSdkVersion hs.android.minSdkVersion
+              targetSdkVersion hs.android.targetSdkVersion
+              versionCode 1
+              versionName '1.0'
+          }
+      
+          buildFeatures {
+              viewBinding true
+          }
+      }
+      
+      dependencies {
+          def kotlinVersion = hs.android.kotlinVersion
+          implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+      
+          def coreKtx = hs.android.lib.coreKtx
+          implementation "androidx.core:core-ktx:$coreKtx"
+      
+          def appCompat = hs.android.lib.appCompat
+          implementation "androidx.appcompat:appcompat:$appCompat"
+      
+          def constraintLayout = hs.android.lib.constraintLayout
+          implementation "androidx.constraintlayout:constraintlayout:$constraintLayout"
+      
+          def material = hs.android.lib.material
+          implementation "com.google.android.material:material:$material"
+      
+          implementation 'com.squareup.picasso:picasso:2.8'
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/aquarium/internals/data/AquariumFakeData.kt
+    visible: false
+    text: |-
+      package org.hyperskill.aquarium.internals.data
+      
+      import org.hyperskill.aquarium.R
+      
+      object AquariumFakeData {
+      
+          val fakeListImageResources = listOf(
+              R.drawable.image1
+          )
+      
+          val fakeListImageUrls = listOf(
+              "https://ucarecdn.com/42045846-b968-4a88-81ec-df73bec4fcb7/",
+              "https://ucarecdn.com/5aa10eb3-fc49-4304-9057-adf1d29a9b4c/",
+              "https://ucarecdn.com/c5fd39b9-7690-4616-b7dc-d3f8da883146/"
+          )
+      
+          val fakeListNames = listOf(
+              "Koi Carp", "Spiny Dogfish", "Kaluga"
+          )
+      
+          val fakeListDescriptions = listOf(
+              //Koi Carp
+              "These colorful, ornamental fish are a variety of the Amur carp. " +
+                      "They were originally found in Central Europe and Asia, " +
+                      "but they’ve spread to many other parts of the world. " +
+                      "Koi carp are popular with breeders, and there are currently over 100 varieties " +
+                      "created through breeding.\n" +
+                      "\n" +
+                      "The average age of a koi carp can vary based on the part of the world it’s bred in. " +
+                      "Carps bred outside of Japan have an average lifespan of around 15 years," +
+                      " while carps bred in Japan can live 40 years or more. The oldest koi carp on record," +
+                      " which was a fish named Hanako, reportedly lived for 226 years!",
+              // Spiny dogfish
+              "The spiny dogfish is a type of shark with venomous spines in front of its dorsal fins." +
+                      " Not only is it an aggressive hunter, but these fish are known to hunt in packs!" +
+                      " Like many shark species, these fish grow slowly, " +
+                      "and some females don’t reach full maturity until they’re over 30 years old.\n" +
+                      "\n" +
+                      "While the lifespan of the spiny dogfish is already impressive, " +
+                      "some fish live for far longer than average. " +
+                      "Spiny dogfish in the Pacific Ocean tend to live longer than fish in the Atlantic," +
+                      " with some fish living longer than 80 years. " +
+                      "Females tend to mature later than males, and they usually live longer too.",
+              //Kaluga
+              "Sometimes called the river beluga, the kaluga is a type of predatory sturgeon." +
+                      " While these fish spend the majority of their time in freshwater, " +
+                      "they’re also able to survive in salt water. " +
+                      "The kaluga is one of the world’s largest freshwater fish species and can grow to be more than 18 feet long, " +
+                      "with a weight of over 2,200 pounds.\n" +
+                      "\n" +
+                      "Kalugas are overfished, which has left the species vulnerable to extinction. " +
+                      "Although many kaluga are killed before they fully mature, " +
+                      "these fish have the potential to live very long lives. " +
+                      "One kaluga that was caught in China is estimated to be over 100 years old."
+          )
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/aquarium/internals/screen/MainScreenWithViewPager2.kt
+    visible: false
+    text: |-
+      package org.hyperskill.aquarium.internals.screen
+      
+      import android.app.Activity
+      import androidx.viewpager2.widget.ViewPager2
+      import com.google.android.material.tabs.TabLayout
+      import org.hyperskill.aquarium.internals.AquariumTest
+      import org.hyperskill.aquarium.internals.data.AquariumFakeData.fakeListNames
+      import org.junit.Assert.assertNotNull
+      import java.util.concurrent.TimeUnit
+      
+      class MainScreenWithViewPager2<T : Activity> (
+          private val test: AquariumTest<T>, val
+          numPages: Int = fakeListNames.size,
+          initViews: Boolean = true
+      ) {
+      
+          companion object {
+              const val ID_VIEWPAGER2 = "viewpager2"
+              const val ID_TAB_LAYOUT = "tab_layout"
+          }
+      
+          var pageIndex = 0
+              private set
+      
+          val viewPager2: ViewPager2 by lazy {
+              with(test){
+                  activity.findViewByString<ViewPager2>(ID_VIEWPAGER2).also { viewPager2 ->
+                      val messageAdapterNull = "Viewpager2 should have an adapter"
+                      assertNotNull(messageAdapterNull, viewPager2.adapter)
+                  }
+              }
+          }
+      
+          val tabLayout: TabLayout by lazy {
+              with(test) {
+                  activity.findViewByString(ID_TAB_LAYOUT)
+              }
+          }
+      
+          fun selectPageThroughTab(pageIndex: Int) = with(test) {
+              this@MainScreenWithViewPager2.pageIndex = pageIndex
+              tabLayout.clickTabAndRun(pageIndex)
+          }
+      
+          fun nextPage() = with(test) {
+              pageIndex = (pageIndex + 1).mod(numPages)
+              viewPager2.setCurrentItem(pageIndex, false)
+              shadowLooper.idleFor(500, TimeUnit.MILLISECONDS)
+          }
+      
+          fun previousPage() = with(test) {
+              pageIndex = (pageIndex - 1).mod(numPages)
+              viewPager2.setCurrentItem(pageIndex, false)
+              shadowLooper.idleFor(500, TimeUnit.MILLISECONDS)
+          }
+      
+          init {
+              if(initViews) {
+                  viewPager2
+                  tabLayout
+              }
+          }
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/aquarium/internals/screen/PageScreen.kt
+    visible: false
+    text: |-
+      package org.hyperskill.aquarium.internals.screen
+      
+      import android.app.Activity
+      import android.graphics.Typeface
+      import android.widget.ImageView
+      import android.widget.TextView
+      import androidx.cardview.widget.CardView
+      import androidx.core.widget.NestedScrollView
+      import org.hyperskill.aquarium.R
+      import org.hyperskill.aquarium.internals.AquariumTest
+      import org.hyperskill.aquarium.internals.shadow.CustomShadowPicasso
+      import org.hyperskill.aquarium.internals.shadow.CustomShadowRequestCreator
+      import org.junit.Assert.assertEquals
+      import org.junit.Assert.assertNotNull
+      import org.robolectric.shadow.api.Shadow
+      
+      
+      class PageScreen<T : Activity>(private val test: AquariumTest<T>, initViews: Boolean = true) {
+      
+          companion object {
+              const val ID_CARD_VIEW = "card_view"
+              const val ID_IMAGE_VIEW = "image_view"
+              const val ID_TV_NAME = "tv_name"
+              const val ID_TV_DESCRIPTION = "tv_description"
+              const val ID_NESTED_SCROLL_VIEW = "scroll_view"
+          }
+      
+          val cardView: CardView by lazy {
+              with(test) {
+                  activity.findViewByString<CardView>(ID_CARD_VIEW).apply {
+                      assertCornerRadius(expectedRadius = 15f)
+                      assertElevation(expectedElevation = 10f)
+                  }
+              }
+          }
+      
+          val nestedScrollView: NestedScrollView by lazy {
+              with(test) {
+                  cardView.findViewByString(ID_NESTED_SCROLL_VIEW)
+              }
+          }
+      
+          val imageView: ImageView by lazy {
+              with(test) {
+                  cardView.findViewByString(ID_IMAGE_VIEW)
+              }
+          }
+      
+          val tvName: TextView by lazy {
+              with(test) {
+                  cardView.findViewByString<TextView>(ID_TV_NAME).apply {
+                      assertAppearanceMaterialBody1(ID_TV_NAME)
+                      assertFontFamily(ID_TV_NAME, "monospace")
+                      assertTextStyle(ID_TV_NAME, Typeface.BOLD)
+                  }
+              }
+          }
+      
+          val tvDescription: TextView by lazy {
+              with(test) {
+                  nestedScrollView.findViewByString<TextView>(ID_TV_DESCRIPTION).apply {
+                      assertAppearanceMaterialBody2(ID_TV_DESCRIPTION)
+                      assertFontFamily(ID_TV_DESCRIPTION, "sans-serif")
+                      assertTextStyle(ID_TV_NAME, Typeface.NORMAL)
+                  }
+              }
+          }
+      
+          init {
+              if (initViews) {
+                  cardView
+                  tvDescription
+                  tvName
+                  imageView
+                  nestedScrollView
+              }
+          }
+      
+      
+          fun assertImageViewResource(expectedImageId: Int, expectedImageIdString: String) = with(test) {
+              imageView.drawable.assertEquals(
+                  message = "Incorrect drawable set on $ID_IMAGE_VIEW",
+                  expectedResourceId = expectedImageId,
+                  expectedResourceIdString = expectedImageIdString
+              )
+          }
+      
+          fun assertImageViewScale() = with(test) {
+              val expectedScaleType = ImageView.ScaleType.CENTER_CROP
+              val scaleType = imageView.scaleType
+              val errorMessage =
+                  "on $ID_IMAGE_VIEW expected CENTER_CROP with ScaleType, but was ${scaleType.name}"
+              assertEquals(errorMessage, expectedScaleType.name, scaleType.name)
+          }
+      
+          fun assertPageTextContent(
+              caseDescription: String,
+              expectedName: String,
+              expectedDescription: String
+          ) = with(test) {
+              tvName.assertText(expectedName, ID_TV_NAME, caseDescription)
+              tvDescription.assertText(expectedDescription, ID_TV_DESCRIPTION, caseDescription)
+          }
+      
+          fun assertPageImageRequest(
+              caseDescription: String,
+              imageUrls: List<String>,
+              pageIndex: Int
+          ) = with(test) {
+      
+              if(pageIndex !in imageUrls.indices) {
+                  throw IllegalArgumentException(
+                      "Test tried to make assertion with invalid index. Test needs to be fixed"
+                  )
+              }
+      
+              val expectedImageUrl = imageUrls[pageIndex]
+              val request = CustomShadowPicasso.requestMap[expectedImageUrl]
+              val messageRequestNull = "$caseDescription, expected to be on page $pageIndex " +
+                      "and to have a request for url $expectedImageUrl"
+              assertNotNull(messageRequestNull, request)
+      
+              val requestShadow = Shadow.extract<CustomShadowRequestCreator>(request)
+              val actualImageView = requestShadow.imageViewLoaded
+              val messageImageView =
+                  "$caseDescription, expected image to be loaded into $ID_IMAGE_VIEW"
+      
+              assertEquals(messageImageView, imageView, actualImageView)
+      
+              val messagePlaceholderIdError =
+                  "$caseDescription, expected placeholder to be set with R.drawable.placeholder"
+              val expectedPlaceholderId = R.drawable.placeholder
+              val actualPlaceholderId = requestShadow.placeholderId
+              assertEquals(messagePlaceholderIdError, expectedPlaceholderId, actualPlaceholderId)
+      
+              val messageErrorIdError =
+                  "$caseDescription, expected error to be set with R.drawable.error"
+              val expectedErrorId = R.drawable.error
+              val actualErrorId = requestShadow.errorId
+              assertEquals(messageErrorIdError, expectedErrorId, actualErrorId)
+          }
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/aquarium/internals/shadow/CustomShadowAsyncDifferConfig.java
+    visible: false
+    text: |+
+      package org.hyperskill.aquarium.internals.shadow;
+      
+      import android.os.Handler;
+      import android.os.Looper;
+      
+      import androidx.recyclerview.widget.AsyncDifferConfig;
+      
+      import org.robolectric.annotation.Implementation;
+      import org.robolectric.annotation.Implements;
+      
+      import java.util.concurrent.Executor;
+      
+      // Version 1.1
+      @Implements(AsyncDifferConfig.class)
+      @SuppressWarnings({"unused"})
+      public class CustomShadowAsyncDifferConfig {
+      
+          public static class MainThreadExecutor implements Executor {
+              private final Handler handler = new Handler(Looper.getMainLooper());
+      
+              @Override
+              public void execute(Runnable r) {
+                  handler.post(r);
+              }
+          }
+          Executor mainExecutor;
+      
+          @Implementation
+          public Executor getBackgroundThreadExecutor() {
+              if(mainExecutor == null) {
+                  mainExecutor = new MainThreadExecutor();
+              }
+              return mainExecutor;
+          }
+      }
+    
+    learner_created: false
+  - name: src/test/java/org/hyperskill/aquarium/internals/shadow/CustomShadowPicasso.kt
+    visible: false
+    text: |-
+      package org.hyperskill.aquarium.internals.shadow
+      
+      import android.content.Context
+      import android.net.Uri
+      import com.squareup.picasso.Picasso
+      import com.squareup.picasso.PicassoProvider
+      import com.squareup.picasso.RequestCreator
+      import org.robolectric.annotation.Implementation
+      import org.robolectric.annotation.Implements
+      import org.robolectric.annotation.RealObject
+      
+      // Version 1.1
+      @Suppress("UNUSED", "UNUSED_PARAMETER")
+      @Implements(Picasso::class)
+      class CustomShadowPicasso {
+      
+          companion object {
+      
+              private var _requestMap:  MutableMap<String, RequestCreator> = mutableMapOf()
+              val requestMap: Map<String, RequestCreator>
+                  get() = _requestMap
+      
+              fun setSingletonNull() {
+                  val field = Picasso::class.java.getDeclaredField("singleton")
+                  field.isAccessible = true
+                  field.set(null, null)
+              }
+      
+              fun setContext(context: Context) {
+                  val field = PicassoProvider::class.java.getDeclaredField("context")
+                  field.isAccessible = true
+                  field.set(null, context)
+              }
+      
+              fun clearRequests() {
+                  _requestMap.clear()
+              }
+          }
+      
+          @RealObject
+          lateinit var picasso: Picasso
+      
+          @Implementation
+          fun load(uri: Uri): RequestCreator {
+      
+              val constructor = RequestCreator::class.java.getDeclaredConstructor(
+                  Picasso::class.java,
+                  Uri::class.java,
+                  Int::class.java
+              )
+              constructor.isAccessible = true
+              val requestCreator = constructor.newInstance(picasso, uri, 0)
+      
+              _requestMap[uri.toString()] = requestCreator
+      
+              return requestCreator
+          }
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/aquarium/internals/shadow/CustomShadowRequestCreator.kt
+    visible: false
+    text: |-
+      package org.hyperskill.aquarium.internals.shadow
+      
+      import android.app.Notification
+      import android.graphics.drawable.Drawable
+      import android.widget.ImageView
+      import android.widget.RemoteViews
+      import androidx.annotation.DrawableRes
+      import androidx.annotation.IdRes
+      import com.squareup.picasso.Callback
+      import com.squareup.picasso.RequestCreator
+      import com.squareup.picasso.Target
+      import org.robolectric.Shadows.shadowOf
+      import org.robolectric.annotation.Implementation
+      import org.robolectric.annotation.Implements
+      import org.robolectric.annotation.RealObject
+      import org.robolectric.shadow.api.Shadow
+      import org.robolectric.util.ReflectionHelpers.ClassParameter
+      
+      @Suppress("UNUSED", "UNUSED_PARAMETER")
+      @Implements(RequestCreator::class)
+      class CustomShadowRequestCreator {
+      
+          @RealObject
+          lateinit var requestCreator: RequestCreator
+          var imageViewLoaded : ImageView? = null
+          var callback : Callback? = null
+          var placeholderId : Int? = null
+          var errorId : Int? = null
+      
+          @Implementation
+          fun into(imageView: ImageView, callback: Callback?) {
+              imageViewLoaded = imageView
+              this.callback = callback
+          }
+      
+          @Implementation
+          fun into(remoteViews: RemoteViews, @IdRes viewId: Int, appWidgetIds: IntArray, callback: Callback?) {
+      
+              throw AssertionError(
+                  "method .into() with RemoteViews argument " +
+                          "is not supported for this project tests"
+              )
+          }
+      
+          @Implementation
+          fun into(
+              remoteViews: RemoteViews, @IdRes viewId: Int, notificationId: Int,
+              notification: Notification, notificationTag: String?, callback: Callback?,
+          ) {
+              throw AssertionError(
+                  "method .into() with RemoteViews argument " +
+                          "is not supported for this project tests"
+              )
+          }
+      
+          @Implementation
+          fun into(target: Target) {
+              throw AssertionError(
+                  "method .into() with Target argument " +
+                          "is not supported for this project tests"
+              )
+          }
+      
+          @Implementation
+          fun placeholder(@DrawableRes placeholderResId: Int): RequestCreator {
+              // calling real placeholder
+              val parameter = ClassParameter.from(Int::class.java, placeholderResId)
+              Shadow.directlyOn<RequestCreator, RequestCreator>(
+                  requestCreator,
+                  requestCreator.javaClass,
+                  "placeholder",
+                  parameter
+              )
+      
+              placeholderId = placeholderResId
+              return requestCreator
+          }
+      
+          fun placeholder(placeholderDrawable: Drawable): RequestCreator {
+              val placeholderId = shadowOf(placeholderDrawable).createdFromResId
+              return requestCreator.placeholder(placeholderId)
+          }
+      
+          fun error(@DrawableRes errorResId: Int): RequestCreator {
+              // calling real error
+              val parameter = ClassParameter.from(Int::class.java, errorResId)
+              Shadow.directlyOn<RequestCreator, RequestCreator>(
+                  requestCreator,
+                  requestCreator.javaClass,
+                  "error",
+                  parameter
+              )
+              errorId = errorResId
+              return requestCreator
+          }
+      
+          fun error(errorDrawable: Drawable): RequestCreator {
+              val errorId = shadowOf(errorDrawable).createdFromResId
+              return requestCreator.error(errorId)
+          }
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/aquarium/internals/AbstractUnitTest.kt
+    visible: false
+    text: |-
+      package org.hyperskill.aquarium.internals
+      
+      import android.app.Activity
+      import android.app.AlertDialog
+      import android.content.Intent
+      import android.os.Bundle
+      import android.view.View
+      import org.junit.Assert.*
+      import org.robolectric.Robolectric
+      import org.robolectric.Shadows.shadowOf
+      import org.robolectric.android.controller.ActivityController
+      import org.robolectric.shadow.api.Shadow
+      import org.robolectric.shadows.ShadowActivity
+      import org.robolectric.shadows.ShadowAlertDialog
+      import org.robolectric.shadows.ShadowLooper
+      import org.robolectric.shadows.ShadowToast
+      import java.time.Duration
+      
+      abstract class AbstractUnitTest<T : Activity>(clazz: Class<T>) {
+      
+          /**
+           * Setup and control activities and their lifecycle
+           */
+          val activityController: ActivityController<T> by lazy {
+              Robolectric.buildActivity(clazz)
+          }
+      
+          /**
+           * The activity being tested.
+           *
+           * It is the @RealObject of the shadowActivity
+           */
+          val activity : Activity by lazy {
+              activityController.get()
+          }
+      
+          /**
+           * A Roboletric shadow object of the Activity class, contains helper methods to deal with
+           * testing activities like setting permissions, peeking results of launched activities for result,
+           * retrieving shown dialogs, intents and others.
+           *
+           * If you don't know what shadows are you can have a better understanding on that reading this
+           * on roboletric documentation: http://robolectric.org/extending/
+           *
+           * Understanding Shadows is fundamental for Roboletric, things are not what they appear to be on
+           * Roboletric because running a code on the jvm is not the same as running the code on a real/emulated device.
+           * Code that expects to eventually talk to the machine won't have the machine they expect to have to talk to.
+           * Shadow is how Roboletric makes things possible, they impersonate @RealObject and act when @RealObject is expected to act.
+           *
+           * Things in Roboletric are not what they appear to be.
+           * It is possible to not notice it for the most part, but it will be essential for some other parts
+           */
+          val shadowActivity: ShadowActivity by lazy {
+              Shadow.extract(activity)
+          }
+      
+          /**
+           * A Roboletric shadow object of the mainLooper. Handles enqueued runnables and also the passage of time.
+           *
+           * Usually used with .idleFor(someDurationValue) or .runToEndOfTasks()
+           */
+          val shadowLooper: ShadowLooper by lazy {
+              shadowOf(activity.mainLooper)
+          }
+      
+          /**
+           * Decorate your test code with this method to ensure better error messages displayed
+           * when tests are run with check button and exceptions are thrown by user implementation.
+           *
+           * returns a value for convenience use, like in tests that involve navigation between Activities
+           */
+          fun <ReturnValue> testActivity(arguments: Intent = Intent(), savedInstanceState: Bundle = Bundle(), testCodeBlock: (Activity) -> ReturnValue): ReturnValue {
+              try {
+                  activity.intent =  arguments
+                  activityController.setup(savedInstanceState)
+              } catch (ex: Exception) {
+                  throw AssertionError("Exception, test failed on activity creation with $ex\n${ex.stackTraceToString()}")
+              }
+      
+              return try {
+                  testCodeBlock(activity)
+              } catch (ex: Exception) {
+                  throw AssertionError("Exception. Test failed on activity execution with $ex\n${ex.stackTraceToString()}")
+              }
+          }
+      
+          /**
+           * Use this method to find views.
+           *
+           * The view existence will be assert before being returned
+           */
+          inline fun <reified T> Activity.findViewByString(idString: String): T {
+              val id = this.resources.getIdentifier(idString, "id", this.packageName)
+              val view: View? = this.findViewById(id)
+      
+              val idNotFoundMessage = "View with id \"$idString\" was not found"
+              val wrongClassMessage = "View with id \"$idString\" is not from expected class. " +
+                      "Expected ${T::class.java.simpleName} found ${view?.javaClass?.simpleName}"
+      
+              assertNotNull(idNotFoundMessage, view)
+              assertTrue(wrongClassMessage, view is T)
+      
+              return view as T
+          }
+      
+          /**
+           * Use this method to find views.
+           *
+           * The view existence will be assert before being returned
+           */
+          inline fun <reified T> View.findViewByString(idString: String): T {
+              val id = this.resources.getIdentifier(idString, "id", context.packageName)
+              val view: View? = this.findViewById(id)
+      
+              val idNotFoundMessage = "View with id \"$idString\" was not found"
+              val wrongClassMessage = "View with id \"$idString\" is not from expected class. " +
+                      "Expected ${T::class.java.simpleName} found ${view?.javaClass?.simpleName}"
+      
+              assertNotNull(idNotFoundMessage, view)
+              assertTrue(wrongClassMessage, view is T)
+      
+              return view as T
+          }
+      
+          /**
+           * Use this method to perform clicks. It will also advance the clock millis milliseconds and run
+           * enqueued Runnable scheduled to run on main looper in that timeframe.
+           * Default value for millis is 500
+           *
+           * Internally it calls performClick() and shadowLooper.idleFor(millis)
+           */
+          fun View.clickAndRun(millis: Long = 500){
+              this.performClick()
+              shadowLooper.idleFor(Duration.ofMillis(millis))
+          }
+      
+          /**
+           * Asserts that the last message toasted is the expectedMessage.
+           * Assertion fails if no toast is shown with null actualLastMessage value.
+           */
+          fun assertLastToastMessageEquals(errorMessage: String, expectedMessage: String,) {
+              val actualLastMessage: String? = ShadowToast.getTextOfLatestToast()
+              assertEquals(errorMessage, expectedMessage, actualLastMessage)
+          }
+      
+          /**
+           * Use this method to retrieve the latest AlertDialog.
+           *
+           * The existence of such AlertDialog will be asserted before returning.
+           *
+           * Robolectric only supports android.app.AlertDialog, test will not be
+           * able to find androidx.appcompat.app.AlertDialog.
+           *
+           * - Important!!! :
+           * When writing stage description state explicitly the correct version that should be imported
+           */
+          fun getLatestDialog(): AlertDialog {
+              val latestAlertDialog = ShadowAlertDialog.getLatestAlertDialog()
+      
+              assertNotNull(
+                  "There was no AlertDialog found. Make sure to import android.app.AlertDialog version",
+                  latestAlertDialog
+              )
+      
+              return latestAlertDialog!!
+          }
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/aquarium/internals/AquariumTest.kt
+    visible: false
+    text: |-
+      package org.hyperskill.aquarium.internals
+      
+      import android.app.Activity
+      import android.content.Intent
+      import android.graphics.drawable.Drawable
+      import android.widget.TextView
+      import androidx.cardview.widget.CardView
+      import com.google.android.material.tabs.TabLayout
+      import org.hyperskill.aquarium.internals.data.AquariumFakeData.fakeListDescriptions
+      import org.hyperskill.aquarium.internals.data.AquariumFakeData.fakeListImageResources
+      import org.hyperskill.aquarium.internals.data.AquariumFakeData.fakeListImageUrls
+      import org.hyperskill.aquarium.internals.data.AquariumFakeData.fakeListNames
+      import org.junit.Assert
+      import org.junit.Assert.assertEquals
+      import org.robolectric.Shadows.shadowOf
+      import java.util.concurrent.TimeUnit
+      
+      open class AquariumTest<T : Activity>(clazz: Class<T>) : AbstractUnitTest<T>(clazz) {
+      
+      
+          val stage1Args by lazy {
+              Intent().apply {
+                  putExtra("imageAnimals", fakeListImageResources.take(1) as java.io.Serializable)
+                  putExtra("nameAnimals", fakeListNames.take(1) as java.io.Serializable)
+                  putExtra("descriptionAnimals", fakeListDescriptions.take(1) as java.io.Serializable)
+              }
+          }
+      
+          val stage2Args by lazy {
+              Intent().apply {
+                  putExtra("imageAnimals", fakeListImageUrls as java.io.Serializable)
+                  putExtra("nameAnimals", fakeListNames as java.io.Serializable)
+                  putExtra("descriptionAnimals", fakeListDescriptions as java.io.Serializable)
+              }
+          }
+      
+          internal fun TextView.assertAppearanceMaterialBody1(idString: String) {
+              /* android:android:textAllCaps = false     android:android:textSize = 16sp */
+      
+              val expectedAllCaps = false
+              val expectedSize = 16.0f
+              val allCaps = this.isAllCaps
+              val textSize = this.textSize
+              val errorMessageFmt =
+                      "expected TextView with id $idString, to be styled with " +
+                              "TextAppearance.MaterialComponents.Body1. On property %s"
+              assertEquals(errorMessageFmt.format("textAllCaps"), expectedAllCaps, allCaps)
+              assertEquals(errorMessageFmt.format("textSize"), expectedSize, textSize)
+          }
+      
+          internal fun TextView.assertAppearanceMaterialBody2(idString: String) {
+              val expectedAllCaps = false
+              val expectedSize = 14.0f
+              val allCaps = this.isAllCaps
+              val textSize = this.textSize
+              val errorMessageFmt =
+                      "expected TextView with id $idString, to be styled with " +
+                              "TextAppearance.MaterialComponents.Body2. On property %s"
+              assertEquals(errorMessageFmt.format("textAllCaps"), expectedAllCaps, allCaps)
+              assertEquals(errorMessageFmt.format("textSize"), expectedSize, textSize)
+          }
+      
+          internal fun TextView.assertFontFamily(idString: String, expectedFontFamily: String) {
+              val errorMessage =
+                      "expected TextView with id $idString, to be styled with fontFamily"
+      
+              val shadowTypeface = shadowOf(typeface)
+              val actualFontFamily = shadowTypeface.fontDescription.familyName
+              assertEquals(errorMessage, expectedFontFamily, actualFontFamily)
+          }
+      
+          internal fun TextView.assertTextStyle(idString: String,expectedStyle: Int){
+              val errorMessage =
+                      "expected TextView with id $idString, to be styled with textStyle"
+              val shadowTypeface = shadowOf(typeface)
+              val actualStyle = shadowTypeface.fontDescription.style
+              assertEquals(errorMessage, expectedStyle, actualStyle)
+          }
+      
+          internal fun CardView.assertCornerRadius(expectedRadius : Float) {
+              val radius = this.radius
+              val errorMessage = "expected $expectedRadius with CardView, " +
+                      "but was $radius"
+              assertEquals(errorMessage, expectedRadius, radius)
+      
+          }
+          internal fun Drawable?.assertEquals(
+                  message: String, expectedResourceId: Int, expectedResourceIdString: String
+          ) {
+      
+              val shadowDrawable = this?.let { shadowOf(it) }
+              val actualResourceId = shadowDrawable?.createdFromResId
+              val errorMessage = "$message " +
+                      "expected $expectedResourceIdString with id $expectedResourceId, " +
+                      "but was _ with id $actualResourceId"
+              Assert.assertTrue(errorMessage, actualResourceId == expectedResourceId)
+          }
+      
+          internal fun TextView.assertText(
+                  expectedText: String,
+                  idString: String,
+                  caseDescription: String) {
+      
+              val actualText = text.toString()
+              val message = "$caseDescription, on property text of TextView with id $idString"
+      
+              assertEquals(message, expectedText, actualText)
+          }
+      
+          internal fun TabLayout.clickTabAndRun(index: Int) {
+              selectTab(getTabAt(index))
+              shadowLooper.idleFor(500, TimeUnit.MILLISECONDS)
+          }
+          internal fun CardView.assertElevation(expectedElevation:Float){
+              val actualElevation = cardElevation
+              val message = "CardView Elevation value is"
+              assertEquals(message,expectedElevation,actualElevation)
+          }
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/aquarium/Stage1BUnitTest.kt
+    visible: false
+    text: |-
+      package org.hyperskill.aquarium
+      
+      import android.content.Intent
+      import org.hyperskill.aquarium.internals.AquariumTest
+      import org.hyperskill.aquarium.internals.data.AquariumFakeData.fakeListDescriptions
+      import org.hyperskill.aquarium.internals.data.AquariumFakeData.fakeListImageUrls
+      import org.hyperskill.aquarium.internals.data.AquariumFakeData.fakeListNames
+      import org.hyperskill.aquarium.internals.screen.PageScreen
+      import org.hyperskill.aquarium.internals.shadow.CustomShadowAsyncDifferConfig
+      import org.hyperskill.aquarium.internals.shadow.CustomShadowPicasso
+      import org.hyperskill.aquarium.internals.shadow.CustomShadowRequestCreator
+      import org.junit.Before
+      import org.junit.FixMethodOrder
+      import org.junit.Test
+      import org.junit.runner.RunWith
+      import org.junit.runners.MethodSorters
+      import org.robolectric.RobolectricTestRunner
+      import org.robolectric.annotation.Config
+      
+      @RunWith(RobolectricTestRunner::class)
+      @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+      @Config(shadows = [
+          CustomShadowPicasso::class,
+          CustomShadowRequestCreator::class,
+          CustomShadowAsyncDifferConfig::class
+      ])
+      class Stage1BUnitTest : AquariumTest<MainActivity>(MainActivity::class.java) {
+      
+          @Before
+          fun setUp() {
+              CustomShadowPicasso.setContext(activity)
+              CustomShadowPicasso.setSingletonNull()
+          }
+      
+          @Test
+          fun test00_checkCardView() {
+              testActivity(arguments = stage2Args) {
+                  PageScreen(this, initViews = false).apply {
+                      cardView
+                  }
+              }
+          }
+      
+          @Test
+          fun test01_checkNestedScrollView() {
+              testActivity(arguments = stage2Args) {
+                  PageScreen(this, initViews = false).apply {
+                      nestedScrollView
+                  }
+              }
+          }
+      
+          @Test
+          fun test02_checkImageView() {
+              testActivity(arguments = stage2Args) {
+                  PageScreen(this, initViews = false).apply {
+                      imageView
+      
+                  }
+              }
+          }
+      
+          @Test
+          fun test03_checkTvName() {
+              testActivity(arguments = stage2Args) {
+                  PageScreen(this, initViews = false).apply {
+                      tvName
+                  }
+              }
+          }
+      
+          @Test
+          fun test04_checkTvDescription(){
+              testActivity(arguments = stage2Args) {
+                  PageScreen(this, initViews = false).apply {
+                      tvDescription
+                  }
+              }
+          }
+      
+          @Test
+          fun test05_checkPageDefaultContent(){
+              val images = fakeListImageUrls
+              val names = fakeListNames
+              val descriptions = fakeListDescriptions
+      
+      
+              testActivity {
+                  PageScreen(this).apply {
+                      val caseDescription = "When using default content on initial page"
+                      assertPageTextContent(
+                              caseDescription = caseDescription,
+                              expectedName = names[0],
+                              expectedDescription = descriptions[0]
+                      )
+      
+                      assertPageImageRequest(caseDescription, images, 0)
+                      assertImageViewScale()
+                  }
+              }
+          }
+      
+          @Test
+          fun test06_checkPageCustomContent(){
+              val images = fakeListImageUrls.drop(1)
+              val names = fakeListNames.drop(1)
+              val descriptions = fakeListDescriptions.drop(1)
+      
+              val args = Intent().apply {
+                  putExtra("imageAnimals", images as java.io.Serializable)
+                  putExtra("nameAnimals", names as java.io.Serializable)
+                  putExtra("descriptionAnimals", descriptions as java.io.Serializable)
+              }
+      
+              testActivity(arguments = args) {
+                  PageScreen(this).apply {
+                      val caseDescription =
+                              "When using custom content passed through intent.extras on initial page"
+                      assertPageTextContent(
+                              caseDescription = caseDescription,
+                              expectedName = names[0],
+                              expectedDescription = descriptions[0]
+                      )
+      
+                      assertPageImageRequest(caseDescription, images, 0)
+                      assertImageViewScale()
+                  }
+              }
+          }
+      }
+    learner_created: false
+  - name: src/test/java/org/hyperskill/aquarium/Stage3UnitTest.kt
+    visible: false
+    text: |-
+      package org.hyperskill.aquarium
+      
+      import org.hyperskill.aquarium.internals.AquariumTest
+      import org.hyperskill.aquarium.internals.data.AquariumFakeData.fakeListDescriptions
+      import org.hyperskill.aquarium.internals.data.AquariumFakeData.fakeListImageUrls
+      import org.hyperskill.aquarium.internals.data.AquariumFakeData.fakeListNames
+      import org.hyperskill.aquarium.internals.screen.MainScreenWithViewPager2
+      import org.hyperskill.aquarium.internals.screen.PageScreen
+      import org.hyperskill.aquarium.internals.shadow.CustomShadowAsyncDifferConfig
+      import org.hyperskill.aquarium.internals.shadow.CustomShadowPicasso
+      import org.hyperskill.aquarium.internals.shadow.CustomShadowRequestCreator
+      import org.junit.Before
+      import org.junit.FixMethodOrder
+      import org.junit.Test
+      import org.junit.runner.RunWith
+      import org.junit.runners.MethodSorters
+      import org.robolectric.RobolectricTestRunner
+      import org.robolectric.annotation.Config
+      
+      @RunWith(RobolectricTestRunner::class)
+      @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+      @Config(shadows = [
+          CustomShadowPicasso::class,
+          CustomShadowRequestCreator::class,
+          CustomShadowAsyncDifferConfig::class
+      ])
+      class Stage3UnitTest : AquariumTest<MainActivity>(MainActivity::class.java) {
+      
+          @Before
+          fun setUp() {
+              CustomShadowPicasso.setContext(activity)
+              CustomShadowPicasso.setSingletonNull()
+          }
+      
+      
+          @Test
+          fun test00_checkViewPager() {
+              testActivity(arguments = stage2Args) {
+                  MainScreenWithViewPager2(this, initViews = false).apply {
+                      viewPager2
+                  }
+              }
+          }
+      
+          @Test
+          fun test01_whenOnPageZeroCheckNextOnce() {
+              testActivity(arguments = stage2Args) {
+                  MainScreenWithViewPager2(this, initViews = false).apply {
+                      PageScreen(this@Stage3UnitTest).apply {
+                          val caseDescription = "After app init"
+                          assertPageTextContent(
+                                  caseDescription = caseDescription,
+                                  expectedName = fakeListNames[pageIndex],
+                                  expectedDescription = fakeListDescriptions[pageIndex]
+                          )
+                          assertPageImageRequest(
+                                  caseDescription = caseDescription,
+                                  imageUrls = fakeListImageUrls,
+                                  pageIndex = pageIndex
+                          )
+                          assertImageViewScale()
+                      }
+      
+                      nextPage()
+      
+                      PageScreen(this@Stage3UnitTest).apply {
+                          val caseDescription = "While on initial page going to next page"
+                          assertPageTextContent(
+                                  caseDescription = caseDescription,
+                                  expectedName = fakeListNames[pageIndex],
+                                  expectedDescription = fakeListDescriptions[pageIndex]
+                          )
+                          assertPageImageRequest(
+                                  caseDescription = caseDescription,
+                                  imageUrls = fakeListImageUrls,
+                                  pageIndex = pageIndex
+                          )
+                          assertImageViewScale()
+                      }
+                  }
+              }
+          }
+      
+          @Test
+          fun test02_whenOnPageOneCheckPreviousOnce() {
+              testActivity(arguments = stage2Args) {
+                  MainScreenWithViewPager2(this, initViews = false).apply {
+                      PageScreen(this@Stage3UnitTest).apply {
+                          val caseDescription = "After app init"
+                          assertPageTextContent(
+                                  caseDescription = caseDescription,
+                                  expectedName = fakeListNames[pageIndex],
+                                  expectedDescription = fakeListDescriptions[pageIndex]
+                          )
+                          assertPageImageRequest(
+                                  caseDescription = caseDescription,
+                                  imageUrls = fakeListImageUrls,
+                                  pageIndex = pageIndex
+                          )
+                          assertImageViewScale()
+                      }
+      
+                      nextPage()
+      
+                      PageScreen(this@Stage3UnitTest).apply {
+                          val caseDescription = "While on initial page going to next page"
+                          assertPageTextContent(
+                                  caseDescription = caseDescription,
+                                  expectedName = fakeListNames[pageIndex],
+                                  expectedDescription = fakeListDescriptions[pageIndex]
+                          )
+                          assertPageImageRequest(
+                                  caseDescription = caseDescription,
+                                  imageUrls = fakeListImageUrls,
+                                  pageIndex = pageIndex
+                          )
+                          assertImageViewScale()
+                      }
+      
+                      previousPage()
+      
+                      PageScreen(this@Stage3UnitTest).apply {
+                          val caseDescription = "While on page 1 going to previous page"
+                          assertPageTextContent(
+                                  caseDescription = caseDescription,
+                                  expectedName = fakeListNames[pageIndex],
+                                  expectedDescription = fakeListDescriptions[pageIndex]
+                          )
+                          assertPageImageRequest(
+                                  caseDescription = caseDescription,
+                                  imageUrls = fakeListImageUrls,
+                                  pageIndex = pageIndex
+                          )
+                          assertImageViewScale()
+                      }
+                  }
+              }
+          }
+      
+          @Test
+          fun test02_whenOnPageZeroCheckNextUntilLastPage() {
+              testActivity(arguments = stage2Args) {
+                  MainScreenWithViewPager2(this, initViews = false).apply {
+                      PageScreen(this@Stage3UnitTest).apply {
+                          val caseDescription = "After app init"
+                          assertPageTextContent(
+                                  caseDescription = caseDescription,
+                                  expectedName = fakeListNames[pageIndex],
+                                  expectedDescription = fakeListDescriptions[pageIndex]
+                          )
+                          assertPageImageRequest(
+                                  caseDescription = caseDescription,
+                                  imageUrls = fakeListImageUrls,
+                                  pageIndex = pageIndex
+                          )
+                          assertImageViewScale()
+                      }
+      
+                      repeat(fakeListNames.size - 1) {
+                          val pageBeforeChange = pageIndex
+      
+                          nextPage()
+      
+                          PageScreen(this@Stage3UnitTest).apply {
+                              val caseDescription = "While on page $pageBeforeChange going to next page"
+                              assertPageTextContent(
+                                      caseDescription = caseDescription,
+                                      expectedName = fakeListNames[pageIndex],
+                                      expectedDescription = fakeListDescriptions[pageIndex]
+                              )
+                              assertPageImageRequest(
+                                      caseDescription = caseDescription,
+                                      imageUrls = fakeListImageUrls,
+                                      pageIndex = pageIndex
+                              )
+                              assertImageViewScale()
+                          }
+                      }
+                  }
+              }
+          }
+      
+          @Test
+          fun test03_whenOnLastPageCheckPreviousUntilFirstPage() {
+              testActivity(arguments = stage2Args) {
+                  MainScreenWithViewPager2(this, initViews = false).apply {
+                      PageScreen(this@Stage3UnitTest).apply {
+                          val caseDescription = "After app init"
+                          assertPageTextContent(
+                                  caseDescription = caseDescription,
+                                  expectedName = fakeListNames[pageIndex],
+                                  expectedDescription = fakeListDescriptions[pageIndex]
+                          )
+                          assertPageImageRequest(
+                                  caseDescription = caseDescription,
+                                  imageUrls = fakeListImageUrls,
+                                  pageIndex = pageIndex
+                          )
+                          assertImageViewScale()
+                      }
+      
+                      repeat(fakeListNames.size - 1) {
+                          val pageBeforeChange = pageIndex
+      
+                          nextPage()
+      
+                          PageScreen(this@Stage3UnitTest).apply {
+                              val caseDescription = "While on page $pageBeforeChange going to next page"
+                              assertPageTextContent(
+                                      caseDescription = caseDescription,
+                                      expectedName = fakeListNames[pageIndex],
+                                      expectedDescription = fakeListDescriptions[pageIndex]
+                              )
+                              assertPageImageRequest(
+                                      caseDescription = caseDescription,
+                                      imageUrls = fakeListImageUrls,
+                                      pageIndex = pageIndex
+                              )
+                              assertImageViewScale()
+                          }
+                      }
+      
+                      repeat(fakeListNames.size - 1) {
+                          val pageBeforeChange = pageIndex
+      
+                          previousPage()
+      
+                          PageScreen(this@Stage3UnitTest).apply {
+                              val caseDescription = "While on page $pageBeforeChange going to previous page"
+                              assertPageTextContent(
+                                      caseDescription = caseDescription,
+                                      expectedName = fakeListNames[pageIndex],
+                                      expectedDescription = fakeListDescriptions[pageIndex]
+                              )
+                              assertPageImageRequest(
+                                      caseDescription = caseDescription,
+                                      imageUrls = fakeListImageUrls,
+                                      pageIndex = pageIndex
+                              )
+                              assertImageViewScale()
+                          }
+                      }
+                  }
+              }
+          }
+      }
+    learner_created: false
+  - name: src/main/res/layout/page_item.xml
+    visible: true
+    learner_created: true
+  - name: src/main/java/org/hyperskill/aquarium/PageAdapter.kt
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/33390#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 03 Dec 2023 21:38:34 UTC"
+record: -1
